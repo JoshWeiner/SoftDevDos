@@ -8,18 +8,22 @@ K01 - Canvas, the Beginnings
         <meta charset="utf-8">
         <title>Canvas Demo</title>
         <style>
-            #slate {
+            #myCanvas {
                 border: 1px solid black;
             }
         </style>
     </head>
     <body>
-        <h1>Bonjour Monde!</h1>
-        <h2>Demo</h2>
+        <h1>Canvas Work 00</h1>
+        <h3>Currently Drawing: <span id="mode">Dots</span></h3>
         <div id="canvas-container">
-            <canvas id="slate" width="600" height="600">
+            <canvas id="myCanvas" width="600" height="600" onclick="canvas_click()">
                 Scoop de woop - alternative text
             </canvas>
         </div>
+        <button id="clear" type="button" onclick="clear_canvas()">Clear</button>
+        <button id="draw" type="button">draw rectangles</button>
+        <br><br><hr><br>
+        <script src="run.js"></script>
     </body>
 </html>

@@ -15,14 +15,14 @@ K01 - Canvas, the Beginnings
     </head>
     <body>
         <h1>Canvas Work 00</h1>
-        <h3>Currently Drawing: <span id="mode">Dots</span></h3>
+        <h3 id="msg" style="color: red;"></h3>
         <div id="canvas-container">
             <canvas id="myCanvas" width="600" height="600">
                 Scoop de woop - alternative text
             </canvas>
         </div>
-        <button id="clear" type="button" onclick="clear_canvas()">Clear</button>
-        <button id="draw" type="button">draw rectangles</button>
+        <button id="clear" type="button">Clear</button>
+        <button id="draw" type="button">toggle</button>
         <br><br><hr><br>
         <script src="clickdraw.js"></script>
     </body>

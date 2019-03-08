@@ -1,3 +1,8 @@
+#BoatInspired -- Thomas Lee, Claire Liu, Josh Weiner
+#SoftDev2 pd6
+#K08 -- Ay Mon, Go Git It From Yer Flask
+#2019-03-08
+
 from flask import Flask,render_template,request,session
 #import mongo
 import pymongo

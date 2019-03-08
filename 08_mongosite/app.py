@@ -13,7 +13,7 @@ app = Flask(__name__)
 app.secret_key = os.urandom(32)
 collection=None
 db=None
-ip = 157.230.50.34
+ip = "157.230.50.34"
 
 @app.route("/")
 def home():
@@ -32,7 +32,7 @@ def get_ip():
             data = json.load(F)
             collection.insert_many(data)
         except:
-            ip = 157.230.50.34
+            ip = "157.230.50.34"
             connection = pymongo.MongoClient(ip)
             connection.drop_database("database")
             db = connection["BoatBoatInspire"]
